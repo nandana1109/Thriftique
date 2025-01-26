@@ -1,4 +1,4 @@
-![Screenshot_2024-05-03-23-18-37-01](https://github.com/user-attachments/assets/6279efb6-a5e1-4f2d-8818-6dd68f05599f)﻿# Thriftique
+ Thriftique
  Team name:
       Bits and bytes
 Team members:
