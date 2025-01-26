@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thriftique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Thriftique">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#clothes">Clothes</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#sell">Sell/Rent</a></li>
+            <li><a href="#profile">Profile</a></li>
+        </ul>
+        <div class="nav-icons">
+            <i class="fas fa-search" id="search-icon"></i>
+            <i class="fas fa-shopping-cart" id="cart-icon"></i>
+            <i class="fas fa-user" id="user-icon"></i>
+        </div>
+    </nav>
+
+    <!-- Search Modal -->
+    <div id="search-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <input type="text" id="search-input" placeholder="Search clothes, books...">
+            <button id="search-btn">Search</button>
+        </div>
+    </div>
+
+    <!-- Main Content Sections -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>"Old things, new possibilities."</h1>
+                <p>Buy, Sell, and Rent Clothes and Books</p>
+                <button class="cta-button">Start Shopping</button>
+            </div>
+        </section>
+
+        <!-- Clothes Section -->
+        <section id="clothes" class="product-section">
+            <h2>Clothes Collection</h2>
+            <div id="clothes-grid" class="product-grid">
+                <!-- Dynamically populated clothes items -->
+            </div>
+        </section>
+
+        <!-- Books Section -->
+        <section id="books" class="product-section">
+            <h2>Book Collection</h2>
+            <div id="books-grid" class="product-grid">
+                <!-- Dynamically populated book items -->
+            </div>
+        </section>
+
+        <!-- Sell/Rent Section -->
+        <section id="sell" class="sell-section">
+            <h2>Sell or Rent Your Items</h2>
+            <form id="listing-form">
+                <select id="item-type">
+                    <option value="clothes">Clothes</option>
+                    <option value="books">Books</option>
+                </select>
+                <input type="text" placeholder="Item Name" required>
+                <input type="number" placeholder="Price" required>
+                <select id="condition">
+                    <option value="new">New</option>
+                    <option value="like-new">Like New</option>
+                    <option value="good">Good</option>
+                    <option value="fair">Fair</option>
+                </select>
+                <input type="file" id="item-image" accept="image/*">
+                <button type="submit">Create Listing</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#clothes">Clothes</a></li>
+                    <li><a href="#books">Books</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Community</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2023 Thrift Marketplace. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
